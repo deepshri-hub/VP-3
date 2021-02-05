@@ -13,21 +13,6 @@ class Food {
      this.lastFed=lastFed;
    }
 
-   deductFood(){
-    class Food {
-      constructor(){
-      this.foodStock=0;
-      this.lastFed;
-      this.image=loadImage('Images/Milk.png');
-      }
-  
-     updateFoodStock(foodStock){
-      this.foodStock=foodStock;
-     }
-  
-     getFedTime(lastFed){
-       this.lastFed=lastFed;
-     }
   
      deductFood(){
        if(this.foodStock>0){
@@ -75,5 +60,5 @@ class Food {
   
       washroom(){
           background(washroom,550,500); 
-      }
   }
+}

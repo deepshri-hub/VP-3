@@ -8,9 +8,9 @@ var gameState,readState;
 function preload(){
 sadDog=loadImage("Images/Dog.png");
 happyDog=loadImage("Images/happy dog.png");
-garden=loadImage("Images/Garden.png");
-washroom=loadImage("Images/Wash Room.png");
-bedroom=loadImage("Images/Bed Room.png");
+garden=loadImage("virtual pet images/Garden.png");
+washroom=loadImage("virtual pet images/Wash Room.png");
+bedroom=loadImage("virtual pet images/Bed Room.png");
 }
 
 function setup() {
@@ -27,7 +27,6 @@ function setup() {
     lastFed=data.val();
   });
 
-  //read game state from database
   readState=database.ref('gameState');
   readState.on("value",function(data){
     gameState=data.val();
